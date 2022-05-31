@@ -9,11 +9,6 @@
 --VeryDarkBlue: hsl(216, 12%, 8%);
 }
 
-* {
-    /* outline: 1px solid white; */
-    /* box-sizing: border-box; */
-}
-
 body {
     display: flex;
     align-items: center;
@@ -23,7 +18,7 @@ body {
     background-color: var(--VeryDarkBlue);
     color: var(--White);
     overflow: hidden;
-    font-family: Inter, sans-serif;
+    font-family: 'Overpass', sans-serif;
     font-weight: 400;
 }
 
@@ -35,7 +30,7 @@ main {
     width: 67vw;
 }
 
-.rating-page {
+.container {
     padding: 1em 1.5em;
     background-color: var(--DarkBlue);
     border-radius: 0.9em;
@@ -47,9 +42,17 @@ main {
 
 .star {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(217, 12%, 25%);
+    
+}
+
+.star svg{
+    fill: var(--Orange);
 }
 
 .text {
@@ -63,28 +66,61 @@ main {
     align-items: center;
 }
 
-.numbers span {
-    background-color: var(--LightGrey);
+.numbers button {
+    background-color: hsl(217, 12%, 25%);
+    color: var(--White);
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    border: none !important;
 }
 
-button {
-    width: -webkit-fill-available;
-    height: 2.5em;
+.numbers button:hover{
     background-color: var(--Orange);
-    border-radius: 0.9em;
+}
+
+.numbers button:focus{
+    background-color: var(--LightGrey);
+}
+
+.submit button {
+    width: -webkit-fill-available;
+    height: 3.5em;
+    background-color: var(--Orange);
+    border-radius: 4em;
     color: var(--White);
     text-transform: uppercase;
+    font-weight: 700;
+    border: none !important;
+}
+
+.submit button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
 }
 
 .thank-you-page {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
 }
 
+.gratitude-text {
+    text-align: center;
+}
 
+.selection {
+    color: var(--Orange);
+    background-color: hsl(217, 12%, 25%);
+    padding: 0.5em;
+    border-radius: 4em;
+}
+
+.gratitude-text span {
+    background-color: transparent;
+}
 
