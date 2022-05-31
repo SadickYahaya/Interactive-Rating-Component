@@ -9,7 +9,82 @@
 --VeryDarkBlue: hsl(216, 12%, 8%);
 }
 
+* {
+    /* outline: 1px solid white; */
+    /* box-sizing: border-box; */
+}
 
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    overflow: hidden;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+    width: 67vw;
+}
+
+.rating-page {
+    padding: 1em 1.5em;
+    background-color: var(--DarkBlue);
+    border-radius: 0.9em;
+    max-width: 25em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.numbers span {
+    background-color: var(--LightGrey);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+button {
+    width: -webkit-fill-available;
+    height: 2.5em;
+    background-color: var(--Orange);
+    border-radius: 0.9em;
+    color: var(--White);
+    text-transform: uppercase;
+}
+
+.thank-you-page {
+    display: none;
+}
 
 
 
